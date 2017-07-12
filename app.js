@@ -6,8 +6,11 @@ const mongoose = require('mongoose')
 mongoose.Promise = require('bluebird')
 mongoose.connect('mongodb://localhost:27017/vendamatic')
 
+app.use(bodyParser.json())
 app.use(router)
 
 app.listen(3000, function() {
   console.log('App is live.');
 })
+
+module.exports = app;
