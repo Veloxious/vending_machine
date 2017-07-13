@@ -17,5 +17,6 @@
 
 const app = require('../app.js')
 const chai = require('chai')
-const supertest = require('supertest')
+const request = require('supertest')
 const assert = chai.assert
+const Item = require("../models/itemSchema")
